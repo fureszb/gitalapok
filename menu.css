@@ -1,0 +1,39 @@
+#menu li{
+list-style: none;
+border: 2px solid gray;
+text-align: center;
+margin: 0;
+}
+#menu ul {
+    padding-left: 0;
+    margin: 10px;
+}
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: rgb(75, 74, 74);
+
+    
+}
+#menu a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+#menu a:hover{
+    color: black;
+}
+
+#menu li:hover{
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (max-width: 400px)
+{
+#menu ul{
+    grid-template-columns: auto;
+}
+}
